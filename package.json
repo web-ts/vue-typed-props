@@ -1,0 +1,53 @@
+{
+  "name": "vue-typed-props",
+  "version": "0.1.0",
+  "description": "Easy to use typed prop definitions for Vue.js",
+  "scripts": {
+    "build": "vite build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest run --coverage",
+    "test:watch:coverage": "vitest --coverage"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "tsx",
+    "render function",
+    "vue",
+    "typescript",
+    "props",
+    "typed props",
+    "ui",
+    "vue.js"
+  ],
+  "types": "./dist/index.d.ts",
+  "main": "./dist/vue-typed-props.es.js",
+  "module": "./dist/vue-typed-props.es.js",
+  "author": "Web-TS",
+  "license": "MIT",
+  "peerDependencies": {
+    "vue": "^3.2.0"
+  },
+  "packageManager": "pnpm@7.15.0",
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "@vitest/coverage-c8": "^0.28.2",
+    "@vitest/ui": "^0.28.2",
+    "@vue/devtools-api": "^6.5.0",
+    "@vue/test-utils": "^2.2.7",
+    "@web-typescript/eslint-config": "^0.0.2",
+    "eslint": "^8.32.0",
+    "happy-dom": "^8.1.5",
+    "prettier": "^2.8.3",
+    "tsd": "^0.25.0",
+    "typescript": "^4.9.4",
+    "vite": "^4.0.4",
+    "vite-plugin-dts": "^1.7.1",
+    "vite-plugin-eslint": "^1.8.1",
+    "vitest": "^0.28.2",
+    "vue": "^3.2.45"
+  }
+}
