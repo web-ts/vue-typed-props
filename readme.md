@@ -71,7 +71,7 @@ For required props use `prop.required.` instead of `prop.`
 
 For generic types use the `generic` and `required.generic` functions.
 
-> Note: The `generic` function does not do runtime type checking. and essentially just casts the value to the type you specify.
+> Note: The `generic` function does not do runtime type checking and essentially just casts the value to the type you specify.
 
 ```ts
 import prop from "vue-typed-props";

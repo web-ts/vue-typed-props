@@ -18,7 +18,7 @@ function generic<T>(defaultValue?: T) {
 }
 
 function number(defaultValue: number): Prop<number>;
-function number<T extends number | null>(defaultValue?: undefined): Prop<T | undefined>;
+function number<T extends number>(defaultValue?: undefined): Prop<T | undefined>;
 function number<T extends number | null>(defaultValue: T): Prop<T>;
 function number<T extends number | null>(defaultValue?: T) {
   return {
@@ -28,7 +28,7 @@ function number<T extends number | null>(defaultValue?: T) {
 }
 
 function boolean(defaultValue: boolean): Prop<boolean>;
-function boolean<T extends boolean | null>(defaultValue?: undefined): Prop<T | undefined>;
+function boolean<T extends boolean>(defaultValue?: undefined): Prop<T | undefined>;
 function boolean<T extends boolean | null>(defaultValue: T): Prop<T>;
 function boolean<T extends boolean | null>(defaultValue?: T) {
   return {
@@ -38,7 +38,7 @@ function boolean<T extends boolean | null>(defaultValue?: T) {
 }
 
 function string(defaultValue: string): Prop<string>;
-function string<T extends string | null>(defaultValue?: undefined): Prop<T | undefined>;
+function string<T extends string>(defaultValue?: undefined): Prop<T | undefined>;
 function string<T extends string | null>(defaultValue: T): Prop<T>;
 function string<T extends string | null>(defaultValue?: T) {
   return {
@@ -48,7 +48,7 @@ function string<T extends string | null>(defaultValue?: T) {
 }
 
 function object(defaultValue: object): ObjectLikeProp<object>;
-function object<T extends object | null>(defaultValue?: undefined): ObjectLikeProp<T | undefined>;
+function object<T extends object>(defaultValue?: undefined): ObjectLikeProp<T | undefined>;
 function object<T extends object | null>(defaultValue: T): ObjectLikeProp<T>;
 function object<T extends object | null>(defaultValue?: T) {
   return {
@@ -68,7 +68,7 @@ function array<T = any>(defaultValue?: Array<T>) {
 }
 
 function func(defaultValue: Function): Prop<Function>;
-function func<T extends Function | null>(defaultValue?: undefined): Prop<T | undefined>;
+function func<T extends Function>(defaultValue?: undefined): Prop<T | undefined>;
 function func<T extends Function | null>(defaultValue: T): Prop<T>;
 function func<T extends Function | null>(defaultValue?: T) {
   return {
@@ -90,7 +90,7 @@ function reqGeneric<T>(defaultValue?: T) {
 }
 
 function reqNumber(defaultValue: number): RequiredProp<number>;
-function reqNumber<T extends number | null>(defaultValue?: undefined): RequiredProp<T>;
+function reqNumber<T extends number>(defaultValue?: undefined): RequiredProp<T>;
 function reqNumber<T extends number | null>(defaultValue: T): RequiredProp<T>;
 function reqNumber<T extends number | null>(defaultValue?: T) {
   return {
@@ -101,7 +101,7 @@ function reqNumber<T extends number | null>(defaultValue?: T) {
 }
 
 function reqBoolean(defaultValue: boolean): RequiredProp<boolean>;
-function reqBoolean<T extends boolean | null>(defaultValue?: undefined): RequiredProp<T>;
+function reqBoolean<T extends boolean>(defaultValue?: undefined): RequiredProp<T>;
 function reqBoolean<T extends boolean | null>(defaultValue: T): RequiredProp<T>;
 function reqBoolean<T extends boolean | null>(defaultValue?: T) {
   return {
@@ -112,7 +112,7 @@ function reqBoolean<T extends boolean | null>(defaultValue?: T) {
 }
 
 function reqString(defaultValue: string): RequiredProp<string>;
-function reqString<T extends string | null>(defaultValue?: undefined): RequiredProp<T>;
+function reqString<T extends string>(defaultValue?: undefined): RequiredProp<T>;
 function reqString<T extends string | null>(defaultValue: T): RequiredProp<T>;
 function reqString<T extends string | null>(defaultValue?: T) {
   return {
@@ -123,7 +123,7 @@ function reqString<T extends string | null>(defaultValue?: T) {
 }
 
 function reqObject(defaultValue: object): RequiredObjectLikeProp<object>;
-function reqObject<T extends object | null>(defaultValue?: undefined): RequiredObjectLikeProp<T>;
+function reqObject<T extends object>(defaultValue?: undefined): RequiredObjectLikeProp<T>;
 function reqObject<T extends object | null>(defaultValue: T): RequiredObjectLikeProp<T>;
 function reqObject<T extends object | null>(defaultValue?: T) {
   return {
@@ -134,7 +134,7 @@ function reqObject<T extends object | null>(defaultValue?: T) {
 }
 
 function reqArray<T = any | null>(defaultValue: Array<T>): RequiredObjectLikeProp<Array<T>>;
-function reqArray<T = any | null>(defaultValue?: undefined): RequiredObjectLikeProp<Array<T>>;
+function reqArray<T = any>(defaultValue?: undefined): RequiredObjectLikeProp<Array<T>>;
 function reqArray<T = any | null>(defaultValue: Array<T>): RequiredObjectLikeProp<Array<T>>;
 function reqArray<T = any | null>(defaultValue?: Array<T>) {
   return {
@@ -145,7 +145,7 @@ function reqArray<T = any | null>(defaultValue?: Array<T>) {
 }
 
 function reqFunc(defaultValue: Function): RequiredProp<Function>;
-function reqFunc<T extends Function | null>(defaultValue?: undefined): RequiredProp<T>;
+function reqFunc<T extends Function>(defaultValue?: undefined): RequiredProp<T>;
 function reqFunc<T extends Function | null>(defaultValue: T): RequiredProp<T>;
 function reqFunc<T extends Function | null>(defaultValue?: T) {
   return {
