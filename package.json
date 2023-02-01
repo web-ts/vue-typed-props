@@ -1,6 +1,6 @@
 {
   "name": "vue-typed-props",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Easy to use typed prop definitions for Vue.js",
   "scripts": {
     "build": "vite build",
