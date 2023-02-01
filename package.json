@@ -23,6 +23,7 @@
     "ui",
     "vue.js"
   ],
+  "type": "module",
   "types": "./dist/index.d.ts",
   "main": "./dist/vue-typed-props.es.js",
   "module": "./dist/vue-typed-props.es.js",
